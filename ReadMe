@@ -1,0 +1,21 @@
+Instructions to Run the Script
+Install Required Libraries: Ensure you have Node.js installed, and then install the necessary libraries if you haven’t done so yet:
+
+bash
+Copy code
+npm install axios cheerio fs
+Update the Script:
+
+Replace https://example.com/login with the actual login URL.
+Replace https://example.com/protected-page with the URL of the page you want to scrape after logging in.
+Update the username and password fields in the credentials object with your actual login credentials.
+Run the Script: Save the script to a file, e.g., collectVideos.js, and run it with:
+
+bash
+Copy code
+node collectVideos.js
+Output: After executing, the script will create a videoLinks.json file in the same directory, containing all collected video URLs.
+
+Notes
+Ensure that you have the legal right to scrape the website and that it doesn’t violate the website's terms of service.
+The way the login works may vary based on the website (e.g., it might require additional headers or parameters). Adjust the login request accordingly if you encounter issues.
